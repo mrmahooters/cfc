@@ -1,0 +1,117 @@
+body{
+  margin: 0px;
+  text-align: center;
+  background-color: yellow;
+  font-family: Orator STD;
+  color: yellow;
+}
+
+.title{
+  font-size: 90%;
+}
+
+.hidden{
+  width: 0px;
+}
+
+.page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.mapContainer {
+  width: 50%;
+}
+
+.fortune {
+  font-size: 50px;
+  color: black;
+  width: 50%;
+  overflow: hidden;
+  font-family: Edwardian Script ITC;
+  padding-bottom: 15px;
+
+  transition-property: "min-width";
+  transition-delay: 1.75s;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+img{
+  width: 100%;
+}
+
+.loadout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+.information{
+  font-family: Orator STD;
+  font-size: 20px;
+  color: red;
+}
+
+.hidden{
+  width: 0px;
+}
+
+/* #button{
+  font-size: 80px;
+  color: yellow;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-shadow: 2px 2px 5px red;
+
+  transform: translate(-50%, -50%);
+} */
+
+#button{
+  text-shadow: 2px 2px 5px red;
+  line-height: .9;
+
+  transition-property: "font-size";
+  transition-delay: 0s;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.smol{
+  font-size: 50px;
+  color: green;
+}
+
+.fullScreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 800px) {
+  /* small screens */
+  .fortune{
+    width: 100%;
+  }
+  .mapContainer{
+    width: 100%;
+  }
+  .page{
+    flex-wrap: wrap;
+  }
+}
